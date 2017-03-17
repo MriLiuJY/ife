@@ -62,7 +62,6 @@ h2{
 	list-style: none;
 }
 .box2{
-	box-shadow:2px 2px 2px #848484;
 	width: 1200px;
 	margin: 0 auto;
 	background-color: #fff;
@@ -95,4 +94,22 @@ h2{
 }
 #boxTable1{
 	color: #fff;
+}
+.box3{
+	padding-top: 20px;
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.box1Nav{
+	border-left: 2px solid #cccccc;
+	padding-left: 5px;
+	width: 620px;
+}
+.boxLast{
+	width: 1240px;
+	margin: 0 auto;
+	background-color: #fff;
+	box-shadow:2px 2px 2px #848484;
+	margin-top: 16px;
 }
