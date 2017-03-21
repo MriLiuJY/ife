@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实现常见的技术产品官网的页面架构及样式布局</title>
+	<style type="text/css">
+		/*公共样式*/
+		.clearFix:before,
+		.clearFix:after{
+			content: " ";
+			display: table;
+		}
+		.clearFix:after{
+			clear: both;
+		}
+		html{
+		}
+		body{
+			margin: 0;
+			padding:0;
+			width: calc(100% - 3px);
+			height: 100%;
+		}
+		@media only screen and (max-width: 1280px){	
+		body{
+			width: 1280px;
+			height: 100%;
+		}
+		}
+		
+		nav{
+			width: 100%;
+			height: 56px;
+		}
+		.navLeft{
+			margin-left: 58px;
+			margin-top: 12px;
+			float: left;
+		}
+		.navLoad{
+			float: right;
+			margin-right: 67px;
+			margin-top: 17px;
+		}
+		.navLoad a{
+			text-decoration: none;
+			color: #ec7775;
+		}
+		.navLoad span{
+			display: block;
+			float: left;
+			margin-top: 3px;
+		}
+		.navRight{
+			float: right;
+			margin-right: 30px;
+			margin-top: 17px;
+			font-size: 15px;
+		}
+		.navRight a{
+			text-decoration: none;
+			color: #787b83;
+			display: block;
+			height: 35px;
+		}
+		.navRight ul{
+			margin: 0;
+			padding: 0;
+		}
+		.navRight ul li{
+			list-style: none;
+			float: left;
+			width: 105px;
+			text-align: center;
+		}
+		.navRight ul li:nth-child(1){
+			width: 85px;
+		}
+		.navRight ul li:hover a{
+			border-bottom:3px solid #e74f4d;
+			color: #e9605e;
+		}
+		.banner{
+			width: 100%;
+			height: 852px;
+			background-image:url("xwxy7_banner.png");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			position: relative;	
+		}
+		.banner a{
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		.bannerUnd{
+			height: 250px;
+			width: 100%;
+			position: absolute;
+			margin-top: -250px;
+			background-color: #ffffff;
+		}
+		.bannerUnd1{
+			float: left;
+			height: 100%;
+			width: 25%;
+		}
+		.bannerUndImg{
+			width: 100%;
+			height: 132px;
+		}
+		.bannerUndImg img{
+			margin-top: 45px;
+			margin-left: calc(50% - 20px);
+		}
+		.bannerUndTex{
+			width: 100%;
+			height: 52px;
+			border-left: 2px solid #aaaaaa;
+		}
+		.bannerUndTex1{
+			width: 100%;
+			height: 52px;
+		}
+		.bannerUndTex p{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			color: #8d8d8d;
+			font-size: 14px;
+		}
+		.bannerUndTex1 p{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			color: #8d8d8d;
+			font-size: 14px;
+		}
+		.book{
+			width: 100%;
+			height: 360px;
+			border: 1px solid #edecec;
+			background-color: #edecec;
+		}
+		.bookImg{
+			margin-top: 90px;
+			margin-left: calc(50% - 45px);
+		}
+		.bookTex{
+			text-align: center;
+			font-size: 49px;
+			color: #a1a1a1;
+		}
+		.bookTex p{
+			margin: 0;
+			padding: 0;
+		}
+		.map{
+			height: 340px;
+			width: 100%;
+			background-image: url("xwxy7_map.png");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			position: relative;
+		}
+		.mapTop{
+			position: absolute;
+			margin-top: 52px;
+			width: 340px;
+			margin-left: calc(50% - 170px);
+		}
+		.mapTop hr{
+			width: 30px;
+			border: 1px solid #ffffff;
+			color: #ffffff;
+		}
+		.mapTopTit{
+			text-align: center;
+			color: #ffffff;
+			font-size: 20px;
+		}
+		.mapSecc{
+			text-align: center;
+			color: #f4eeec;
+			font-size: 12px;
+		}
+		.mapUnd{
+			width: 1058px;
+			height: 35px;
+			margin-left: calc(50% - 529px);
+			margin-top: 170px;
+			position: absolute;
+		}
+		.mapUndBox{
+			float: left;
+			width: 236px;
+			height: 35px;
+			margin-left: 28px;
+		}
+		.mapUndBox select{
+			width: 100%;
+			height: 35px;
+			color: #a8aaaa;
+			appearance:none !important;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			background-image: url("xwxy7_select.png");
+			background-repeat: no-repeat;
+			background-size: 17px 17px;
+			background-position:95% 50%;
+			padding-left: 10px;
+		}
+		.mapUndBox select:hover { 
+			border: 1px solid #be4e48;
+		}
+		.mapUndBox select option{
+			height: 25px;
+			background-color: #e3e3e4;
+			color: #89898a;
+		}
+		.mapUndBox select option:hover{
+			border: 1px solid #be4e48;
+		}
+		.mapUndBox input{
+			width: 100%;
+			height: 35px;
+			background-color: #bf4f49;
+			color: #ffffff;
+			border: 1px solid #bf4f49;
+			outline:none;
+		}
+	</style>
+</head>
+<body>
+	<nav class="clearFix">
+		<div class="navLeft"><img src="xwxy7_logo.png"></div>
+		<div class="navLoad">
+			<span><img src="xwxy7_ico.png"></span><a href="">登陆</a>
+		</div>
+		<div class="navRight">
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">最新活动</a></li>
+				<li><a href="">项目介绍</a></li>
+				<li><a href="">爱心社区</a></li>
+				<li><a href="">关于我们</a></li>
+			</ul>
+		</div>
+		</div>  
+	</nav>    <!-- nav结束 -->
+
+	<div class="banner">
+		<a href=""></a>
+		<div class="bannerUnd clearFix">
+			<div class="bannerUnd1">
+				<div class="bannerUndImg"><img src="xwxy7_banner1.png"></div>
+				<div class="bannerUndTex1">
+				<p>打造全新世界观，让你更</p>
+				<p>爱你的生活</p>
+				</div>
+			</div>
+			<div class="bannerUnd1">
+				<div class="bannerUndImg"><img src="xwxy_banner2.png"></div>
+				<div class="bannerUndTex">
+				<p>丰富多彩的公益活动，发</p>
+				<p>挥新世界的主人公意识</p>
+				</div>
+			</div>
+			<div class="bannerUnd1">
+				<div class="bannerUndImg"><img src="xwxy_banner3.png"></div>
+				<div class="bannerUndTex">
+				<p>时尚的新理念，超前体验</p>
+				<p>未知的生活</p>
+				</div>
+			</div>
+			<div class="bannerUnd1">
+				<div class="bannerUndImg"><img src="xwxy_banner4.png"></div>
+				<div class="bannerUndTex">
+				<p>完善的培训机制，培养你</p>
+				<p>全新的世界观</p>
+				</div>
+			</div>
+		</div>
+	</div>   <!-- banner结束 -->
+
+	<div class="book">
+		<div class="bookImg"><img src="xwxy7_book.png"></div>
+		<div class="bookTex"><p>关于新世界，你不知道的还有什么?</p></div>
+	</div>   <!-- book结束 -->
+
+	<div class="map">
+		<div class="mapTop">
+			<div class="mapTopTit">查找新世界城市活动信息</div>
+			<hr>
+			<div class="mapSecc">每个城市都有不同的活动信息，请自主查询您想了解的城市</div>
+		</div>
+		<div class="mapUnd">
+			<div class="mapUndBox">
+				<select>
+				<option>中国</option>
+				<option>美国</option>
+				<option>澳洲</option>
+				<option>欧美</option>
+				</select>
+			</div>
+			<div class="mapUndBox">
+				<select>
+				<option>省份</option>
+				<option>美国</option>
+				<option>澳洲</option>
+				<option>欧美</option>
+				</select>
+			</div>
+			<div class="mapUndBox">
+			<select>
+				<option>城市</option>
+				<option>美国</option>
+				<option>澳洲</option>
+				<option>欧美</option>
+				</select>
+			</div>
+			<div class="mapUndBox"><input type="button" name="" value="搜索"></div>
+		</div>
+	</div>  <!-- map结束 -->
+
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<footer></footer>
+</body>
+</html>
