@@ -15,6 +15,10 @@
 		}
 		html{
 		}
+		p{
+			margin: 0;
+			padding: 0;
+		}
 		body{
 			margin: 0;
 			padding:0;
@@ -135,15 +139,11 @@
 			height: 52px;
 		}
 		.bannerUndTex p{
-			margin: 0;
-			padding: 0;
 			text-align: center;
 			color: #8d8d8d;
 			font-size: 14px;
 		}
 		.bannerUndTex1 p{
-			margin: 0;
-			padding: 0;
 			text-align: center;
 			color: #8d8d8d;
 			font-size: 14px;
@@ -166,18 +166,12 @@
 			color: #fff;
 			font-size: 50px;
 		}
-		.bannerLeftTop p{
-			margin: 0;
-			padding: 0;
-		}
 		.bannerLeftUnd{
 			font-size: 20px;
 			color: #fff;
 			margin-top: 17px;
 		}
 		.bannerLeftUnd p{
-			margin: 0;
-			padding: 0;
 			margin-top: 13px;
 		}
 		.bannerLeftBut{
@@ -216,10 +210,6 @@
 			text-align: center;
 			font-size: 49px;
 			color: #a1a1a1;
-		}
-		.bookTex p{
-			margin: 0;
-			padding: 0;
 		}
 		/*第四栏map样式*/
 		.map{
@@ -307,6 +297,7 @@
 		.activity{
 			width: 100%;
 			height: 604px;
+			background-color: #f8f8f7;
 		}
 		.activityBox{
 			margin-left: calc(50% - 511px);
@@ -341,21 +332,116 @@
 			text-align: center;
 			color: #dadada;
 			font-size: 12px;
-			margin: 0;
-			padding: 0;
 			margin-top: 11px;
 		}
 		.activityConTop:hover{
 			transform:translateY(65px);
 		}
 		.activityConTop:hover~.activityConUnd h4{
-			margin-top: 0;
+			margin-top: 20px;
 			letter-spacing: 25px;
 			margin-left: 25px;
-			font-size: 20px;
+			font-size: 18px;
 		}
 		.activityConTop:hover~.activityConUnd{
 			transform:translateY(-360px);
+		}  /*activity结束*/
+		/*第六部分word开始*/
+		.word{
+			width: 100%;
+			height: 1086px;
+		}
+		.wordTop{
+			width: 100%;
+			height: 566px;
+		}
+		.wordTopBox{
+			width: 34%;
+			height: 566px;
+			float: left;
+		}
+		.wordTopImg{
+			height: 566px;
+			width: 66%;
+			background-image: url("xwxy7_word1.png");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			float: left;
+		}
+		.wordTopBoxTit{
+			width: 130px;
+			height: 36px;
+			margin-left: calc(50% - 65px);
+			margin-top: 162px;
+		}
+		.wordTopBoxTit p{
+			float: left;
+			margin-top: 3px;
+			font-size: 20px;
+			margin-left: 20px;
+		}
+		.wordTopBoxTit span{
+			display: block;
+			float: left;
+			margin-top: 3px;
+			font-size: 20px;
+			color: #e74f4d;
+		}
+		.wordTopBoxTxt{
+			width: 290px;
+			height: 120px;
+			margin-left: calc(50% - 145px);
+		}
+		.wordTopBoxTxt p{
+			margin-top: 18px;
+			color: #b0b0b0;
+			font-size: 12px;
+			line-height: 12px;
+		}
+		.wordTopBoxBut{
+			width: 106px;
+			height: 33px;
+			margin-top: 50px;
+			margin-left: calc(50% - 53px);
+		}
+		.wordTopBoxBut input{
+			width: 104px;
+			height: 31px;
+			border: 1px solid #e25e62;
+			background-color: #fff;
+			outline: none;
+			color: #e25c60;
+		}
+		.wordTopBoxIco{
+			width: 75px;
+			height: 14px;
+			margin-top: 24px;
+			margin-left: calc(50% - 38px);
+		}
+		.Ico{
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			border: 1px solid #9c9c9c;
+			float: left;
+			margin-left: 11px;
+		}
+		.wordUnd{
+			width: 100%;
+			height: 520px;
+		}
+		.wordUndBox{
+			width: 33%;
+			height: 520px;
+			float: left;
+		}
+		.wordUndImg{
+			width: 33%;
+			height: 520px;
+			float: left;
+			background-image: url("xwxy7_word2.png");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
 		}
 	</style>
 </head>
@@ -374,7 +460,7 @@
 				<li><a href="">关于我们</a></li>
 			</ul>
 		</div>
-		</div>  
+		</div>
 	</nav>    <!-- nav结束 -->
 
 	<div class="banner">
@@ -500,8 +586,34 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div></div>
+	</div>  <!-- activity结束 -->
+
+	<div class="word">
+		<div class="wordTop clearFix">
+			<div class="wordTopImg"></div>
+			<div class="wordTopBox">
+				<div class="wordTopBoxTit"><p>新世界/</p><span>01</span></div>
+				<div class="wordTopBoxTxt">
+				<p>新世界新世界新世界新世界新世界新世界新世界新世界</p>
+				<p>新世界新世界新世界新世界新世界新世界新世界新世界</p>
+				<p>新世界新世界新世界新世界新世界新世界新世界新世界</p>
+				<p>新世界新世界新世界新世界新世界新世界</p>
+				</div>
+				<div class="wordTopBoxBut"><input type="button" name="" value="更多详情"></div>
+				<div class="wordTopBoxIco">
+					<div class="Ico" style="background-color: #9c9c9c"></div>
+					<div class="Ico"></div>
+					<div class="Ico"></div>
+				</div>
+			</div>
+		</div>
+		<div class="wordUnd clearFix">
+			<div class="wordUndBox"></div>
+			<div class="wordUndBox"></div>
+			<div class="wordUndImg"></div>
+		</div>
+	</div>  <!-- word结束 -->
+
 	<div></div>
 	<div></div>
 	<footer></footer>
