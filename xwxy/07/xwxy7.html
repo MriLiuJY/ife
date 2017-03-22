@@ -80,6 +80,10 @@
 			border-bottom:3px solid #e74f4d;
 			color: #e9605e;
 		}
+		.navRight ul li:nth-child(1) a{
+			border-bottom:3px solid #e74f4d;
+			color: #e9605e;
+		}
 		/*banner样式*/
 		.banner{
 			width: 100%;
@@ -89,10 +93,17 @@
 			background-size: 100% 100%;
 			position: relative;	
 		}
-		.banner a{
-			width: 100%;
-			height: 100%;
-			display: block;
+		.bannerShow{
+			display:inline-block;
+			width:100%;
+			height:100%;
+			transition:all 1s linear;	
+		}
+		.bannerShow:hover{
+			opacity: .3;
+			background-color: #000;
+			transition: all 1s linear;
+			z-index: 1;
 		}
 		.bannerUnd{
 			height: 250px;
@@ -136,6 +147,59 @@
 			text-align: center;
 			color: #8d8d8d;
 			font-size: 14px;
+		}
+		.bannerUndTex1 p:hover{
+			transition: text-shadow 0.5s ease-in-out;
+			text-shadow: 2px 2px 2px #5b606f;
+		}
+		.bannerUndTex p:hover{
+			transition: text-shadow 0.5s ease-in-out;
+			text-shadow: 2px 2px 2px #5b606f;
+		}
+		.bannerLeft{
+			position: absolute;
+			margin-top: 230px;
+			margin-left: 176px;
+			z-index: 2;
+		}
+		.bannerLeftTop{
+			color: #fff;
+			font-size: 50px;
+		}
+		.bannerLeftTop p{
+			margin: 0;
+			padding: 0;
+		}
+		.bannerLeftUnd{
+			font-size: 20px;
+			color: #fff;
+			margin-top: 17px;
+		}
+		.bannerLeftUnd p{
+			margin: 0;
+			padding: 0;
+			margin-top: 13px;
+		}
+		.bannerLeftBut{
+			margin-top: 68px;
+		}
+		.bannerLeftBut input{
+			width: 330px;
+			height: 63px;
+			background-color: #e74f4d;
+			color:#fff;
+			border: none;
+			border-radius: 5px;
+			outline: none;
+		}
+		.bannerLeftBut input:hover{
+			background-color: #F5F5DC;
+			color: #e74f4d;
+			box-shadow: 3px 3px 3px #F5F5DC;
+		}
+		.bannerLeftTop p:hover{
+			transition: text-shadow 0.5s ease-in-out;
+			text-shadow: 4px 4px 4px #e74f4d;
 		}
 		/*第三栏book样式*/
 		.book{
@@ -227,12 +291,6 @@
 		.option:hover .mapUndBox{
 			border: 1px solid #fff;
 		}
-		/*.mapUndBox select option{
-			height: 80px;
-			background-color: #e3e3e4;
-			color: #89898a;
-			outline:none;
-		}*/
 		.mapUndBox select option:hover option{
 			border: 1px solid #be4e48;
 			background-color: #be4e48;
@@ -244,8 +302,61 @@
 			color: #ffffff;
 			border: 1px solid #bf4f49;
 			outline:none;
+		}  /*map结束*/
+		/*第五栏activity样式*/
+		.activity{
+			width: 100%;
+			height: 604px;
 		}
-		
+		.activityBox{
+			margin-left: calc(50% - 511px);
+			margin-top: 100px;
+			height: 390px;
+			width: 986px;
+		}
+		.activityCon{
+			height: 388px;
+			width: 218px;
+			float: left;
+			margin-left: 26px;
+		}
+		.activityConTop{
+			height: 336px;
+			width: 217px;
+			border: 1px solid #dadada;
+		}
+		.activityConTop img{
+			margin-top: 13px;
+			margin-left: 8px;
+		}
+		.activityConUnd h4{
+			text-align: center;
+			transition: letter-spacing 1s;
+			margin: 0;
+			padding: 0;
+			margin-top: 13px;
+			font-size: 13px;
+		}
+		.activityConUnd p{
+			text-align: center;
+			color: #dadada;
+			font-size: 12px;
+			margin: 0;
+			padding: 0;
+			margin-top: 11px;
+		}
+		.activityConTop:hover{
+			transform:translateY(65px);
+		}
+		.activityConTop:hover~.activityConUnd h4{
+			margin-top: 0;
+			letter-spacing: 25px;
+			margin-left: 25px;
+			font-size: 20px;
+		}
+		.activityConTop:hover~.activityConUnd{
+			transform:translateY(-360px);
+		}
 	</style>
 </head>
 <body>
@@ -267,7 +378,17 @@
 	</nav>    <!-- nav结束 -->
 
 	<div class="banner">
-		<a href=""></a>
+		<div class="bannerLeft">
+			<div class="bannerLeftTop"><p>Time of new life</p></div>
+			<div class="bannerLeftUnd">
+			<p>新时代,年轻的人们让我们一起</p>
+			<p>体验新生活，享受新生活</p>
+			</div>
+			<div class="bannerLeftBut">
+				<input type="button" name="" value="开始体验">
+			</div>
+		</div>
+		<span href="" class="bannerShow"></span>
 		<div class="bannerUnd clearFix">
 			<div class="bannerUnd1">
 				<div class="bannerUndImg"><img src="xwxy7_banner1.png"></div>
@@ -340,7 +461,46 @@
 		</div>
 	</div>  <!-- map结束 -->
 
-	<div></div>
+	<div class="activity">
+		<div class="activityBox">
+			<div class="activityCon">
+				<div class="activityConTop">
+					<img src="xwxy7_activ1.png">
+				</div>
+				<div class="activityConUnd">
+					<h4>北京活动</h4>
+					<p>新社区大联盟</p>
+				</div>
+			</div>
+			<div class="activityCon">
+				<div class="activityConTop">
+					<img src="xwxy7_activ2.png">
+				</div>
+				<div class="activityConUnd">
+					<h4>上海活动</h4>
+					<p>夜上海新景观探索</p>
+				</div>
+			</div>
+			<div class="activityCon">
+				<div class="activityConTop">
+					<img src="xwxy7_activ3.png">
+				</div>
+				<div class="activityConUnd">
+					<h4>深圳活动</h4>
+					<p>全新海岸线观点站</p>
+				</div>
+			</div>
+			<div class="activityCon">
+				<div class="activityConTop">
+					<img src="xwxy7_activ4.png">
+				</div>
+				<div class="activityConUnd">
+					<h4>香港活动</h4>
+					<p>奢侈消费大派送</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div></div>
 	<div></div>
 	<div></div>
