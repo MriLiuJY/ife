@@ -27,7 +27,7 @@
 			height: 100%;
 		}
 		}
-		
+		 /* 导航样式*/
 		nav{
 			width: 100%;
 			height: 56px;
@@ -80,6 +80,7 @@
 			border-bottom:3px solid #e74f4d;
 			color: #e9605e;
 		}
+		/*banner样式*/
 		.banner{
 			width: 100%;
 			height: 852px;
@@ -136,6 +137,7 @@
 			color: #8d8d8d;
 			font-size: 14px;
 		}
+		/*第三栏book样式*/
 		.book{
 			width: 100%;
 			height: 360px;
@@ -155,6 +157,7 @@
 			margin: 0;
 			padding: 0;
 		}
+		/*第四栏map样式*/
 		.map{
 			height: 340px;
 			width: 100%;
@@ -209,17 +212,30 @@
 			background-size: 17px 17px;
 			background-position:95% 50%;
 			padding-left: 10px;
+			outline:none;
 		}
 		.mapUndBox select:hover { 
 			border: 1px solid #be4e48;
 		}
-		.mapUndBox select option{
-			height: 25px;
+		.option{
+			height: 80px;
+			outline: none;
+			background-color: #e3e3e4;
+			-webkit-appearance:none;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		}
+		.option:hover .mapUndBox{
+			border: 1px solid #fff;
+		}
+		/*.mapUndBox select option{
+			height: 80px;
 			background-color: #e3e3e4;
 			color: #89898a;
-		}
-		.mapUndBox select option:hover{
+			outline:none;
+		}*/
+		.mapUndBox select option:hover option{
 			border: 1px solid #be4e48;
+			background-color: #be4e48;
 		}
 		.mapUndBox input{
 			width: 100%;
@@ -229,6 +245,7 @@
 			border: 1px solid #bf4f49;
 			outline:none;
 		}
+		
 	</style>
 </head>
 <body>
@@ -297,26 +314,26 @@
 		<div class="mapUnd">
 			<div class="mapUndBox">
 				<select>
-				<option>中国</option>
-				<option>美国</option>
-				<option>澳洲</option>
-				<option>欧美</option>
+				<option class="option">中国</option>
+				<option class="option">美国</option>
+				<option class="option">澳洲</option>
+				<option class="option">欧美</option>
 				</select>
 			</div>
 			<div class="mapUndBox">
 				<select>
-				<option>省份</option>
-				<option>美国</option>
-				<option>澳洲</option>
-				<option>欧美</option>
+				<option class="option">省份</option>
+				<option class="option">美国</option>
+				<option class="option">澳洲</option>
+				<option class="option">欧美</option>
 				</select>
 			</div>
 			<div class="mapUndBox">
 			<select>
-				<option>城市</option>
-				<option>美国</option>
-				<option>澳洲</option>
-				<option>欧美</option>
+				<option class="option">城市</option>
+				<option class="option">美国</option>
+				<option class="option">澳洲</option>
+				<option class="option">欧美</option>
 				</select>
 			</div>
 			<div class="mapUndBox"><input type="button" name="" value="搜索"></div>
