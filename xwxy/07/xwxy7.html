@@ -434,14 +434,118 @@
 			width: 33%;
 			height: 520px;
 			float: left;
+			background-color: #e74f4d;
+		}
+		.wordUndBox1{
+			width: 33%;
+			height: 520px;
+			float: left;
 		}
 		.wordUndImg{
-			width: 33%;
+			width: 34%;
 			height: 520px;
 			float: left;
 			background-image: url("xwxy7_word2.png");
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
+		}
+		.wordUndBoxTxt{
+			width: 170px;
+			height: 66px;
+			text-align: center;
+			margin-top: 172px;
+			margin-left: calc(50% - 88px);
+			color: #fff;
+			font-size: 19px;
+		}
+		.wordUndBoxTxt hr{
+			height: 0;
+			width: 30px;
+			border: 1px solid;
+			text-align: center;
+		}
+		.wordUndBoxInp{
+			margin-top: 25px;
+			margin-left: calc(50% - 88px);
+		}
+		.wordUndBoxInp input{
+			width: 167px;
+			height: 41px;
+			color: #fff;
+			background-color: #e74f4d;
+			border: 1px solid #fff;
+			outline: none;
+		}
+		.wordUndBox1Txt{
+			width: 170px;
+			height: 66px;
+			text-align: center;
+			margin-top: 172px;
+			margin-left: calc(50% - 88px);
+			font-size: 19px;
+		}
+		.wordUndBox1Txt hr{
+			height: 0;
+			width: 30px;
+			border: 1px solid #ababaa;
+			text-align: center;
+		}
+		.wordUndBox1Inp{
+			margin-top: 25px;
+			margin-left: calc(50% - 88px);
+		}
+		.wordUndBox1Inp input{
+			width: 167px;
+			height: 41px;
+			color: #e74f4d;
+			background-color: #fff;
+			border: 1px solid #e74f4d;
+			outline: none;
+		}
+		.login{
+			height: 750px;
+			width: 100%;
+		}
+		.loginTop{
+			width: calc(100% - 2px);
+			height: 298px;
+			position: relative;
+			border: 1px solid #fff;
+		}
+		.loginTopTit{
+			margin-top: 120px;
+			margin-left: calc(50% - 220px);
+			width: 440px;
+			height: 48px;
+			font-size: 20px;
+			text-align: center;
+		}
+		.loginTopTit hr{
+			border:1px solid #eb6664;
+			width: 30px;
+			height: 0;
+			text-align: center;
+		}
+		.loginTopTxt{
+			font-size: 12px;
+			color: #b0b0b0;
+			text-align: center;
+			margin-left: calc(50% - 220px);
+			width: 440px;
+			height: 50px;
+		}
+		.loginLeft{
+			width: 25%;
+			height: 450px;
+			border: 1px solid red;
+			float: left;
+			margin-left: 13%;
+		}
+		.loginRight{
+			width: 50%;
+			height: 450px;
+			border: 1px solid red;
+			float: left;
 		}
 	</style>
 </head>
@@ -608,13 +712,61 @@
 			</div>
 		</div>
 		<div class="wordUnd clearFix">
-			<div class="wordUndBox"></div>
-			<div class="wordUndBox"></div>
+			<div class="wordUndBox">
+				<div class="wordUndBoxTxt">
+				<p>新时代</p>
+				<p>关于爱生活的我们</p>
+				<hr>
+				</div>
+				<div class="wordUndBoxInp">
+					<input type="button" name="查看更多" value="查看更多">
+				</div>
+			</div>
+			<div class="wordUndBox1">
+				<div class="wordUndBox1Txt">
+				<p>新时代</p>
+				<p>关于爱生活的我们</p>
+				<hr>
+				</div>
+				<div class="wordUndBox1Inp">
+					<input type="button" name="查看更多" value="查看更多">
+				</div>
+			</div>
 			<div class="wordUndImg"></div>
 		</div>
 	</div>  <!-- word结束 -->
 
-	<div></div>
+	<div class="login clearFix">
+		<div class="loginTop">
+			<div class="loginTopTit">
+				<p>成为我们的志愿者</p>
+				<hr>
+			</div>
+			<div class="loginTopTxt">
+				<p>新世界的大家庭需要每一个热爱生活的人的加入，如果你够年轻，有梦想，有激情</p>
+				<p>那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+			</div>
+		</div>
+		<div class="loginLeft">
+			<div>
+				<h5></h5>
+				<p></p>
+				<div><img src=""><p></p></div>
+			</div>
+			<div>
+				<h5></h5>
+				<p></p>
+				<div><img src=""><p></p></div>
+			</div>
+			<div>
+				<h5></h5>
+				<p></p>
+				<div><img src=""><p></p></div>
+			</div>
+		</div>
+		<div class="loginRight"></div>
+	</div>  <!-- login结束 -->
+
 	<div></div>
 	<footer></footer>
 </body>
