@@ -29,6 +29,8 @@
 		body{
 			width: 1280px;
 			height: 100%;
+			margin: 0;
+			padding: 0;
 		}
 		}
 		 /* 导航样式*/
@@ -189,7 +191,6 @@
 		.bannerLeftBut input:hover{
 			background-color: #F5F5DC;
 			color: #e74f4d;
-			box-shadow: 3px 3px 3px #F5F5DC;
 		}
 		.bannerLeftTop p:hover{
 			transition: text-shadow 0.5s ease-in-out;
@@ -197,7 +198,7 @@
 		}
 		/*第三栏book样式*/
 		.book{
-			width: 100%;
+			width: calc(100% - 2px);
 			height: 360px;
 			border: 1px solid #edecec;
 			background-color: #edecec;
@@ -501,7 +502,8 @@
 			background-color: #fff;
 			border: 1px solid #e74f4d;
 			outline: none;
-		}
+		}  /*word结束*/
+		/*第七部分开始*/
 		.login{
 			height: 750px;
 			width: 100%;
@@ -535,17 +537,132 @@
 			height: 50px;
 		}
 		.loginLeft{
-			width: 25%;
-			height: 450px;
-			border: 1px solid red;
+			width: 280px;
+			height: 282px;
 			float: left;
-			margin-left: 13%;
+			margin-left: calc(50% - 500px);
 		}
 		.loginRight{
-			width: 50%;
-			height: 450px;
-			border: 1px solid red;
+			width: 640px;
+			height: 282px;
 			float: left;
+			margin-left: 76px;
+		}
+		.loginLeftTit{
+			margin-bottom: 40px;
+		}
+		.loginLeftTit h5{
+			font-size: 14px;
+			color: #666160;
+			margin: 0;
+			padding:0;
+		}
+		.loginLeftTit p{
+			font-size: 12px;
+			color: #9d9b9a;
+			margin: 17px 0;
+			line-height: 22px;
+			margin-bottom: 0;
+		}
+		.loginLeftMore{
+			position: absolute;
+		}
+		.loginLeftMore p{
+			margin: 0 ;
+			padding: 0;
+			margin-left: 8px;
+			display: inline;
+		}
+		.loginLeftMore img{
+			margin-left: 230px;
+			display: inline;
+		}
+		.loginLeftMore a{
+			text-decoration: none;
+		}
+		.loginRightName{
+			float: left;
+			width: 310px;
+			height: 40px;
+			background-color: #ededef;
+			border: none;
+			outline: none;
+			color: #787474;
+			text-indent:10px;
+		}
+		.loginRightAge{
+			margin-left: 18px;
+			float: left;
+			width: 310px;
+			height: 40px;
+			background-color: #ededef;
+			border: none;
+			outline: none;
+			color: #787474;
+			text-indent:10px;
+		}
+		.loginRightTell{
+			margin-top: 14px;
+			float: left;
+			width: 310px;
+			height: 40px;
+			background-color: #ededef;
+			border: none;
+			outline: none;
+			color: #787474;
+			text-indent:10px;
+		}
+		.loginRightAdd{
+			margin-top: 14px;
+			margin-left: 18px;
+			float: left;
+			width: 310px;
+			height: 40px;
+			background-color: #ededef;
+			border: none;
+			outline: none;
+			color: #787474;
+			text-indent:10px;
+		}
+		.loginRightDream{
+			text-indent: 17px;
+			margin-top: 14px;
+			float: left;
+			width: 640px;
+			height: 110px;
+			padding: 0;
+			border: none;
+			outline: none;
+			background-color: #ededef;
+			color: #787474;
+			padding-top: 10px;
+			resize : none;
+		}
+		.loginRightBut{
+			margin-top: 14px;
+			width: 100%;
+			height: 40px;
+			border: none;
+			outline: none;
+			background-color: #ededef;
+			color: #787474;
+			text-align: center; 
+		}  /*login结束*/
+		/*第八部分开始*/
+		.contact{
+			height: 358px;
+			background-color: #32353e;
+			width: calc(100% - 2px);
+			border: 1px solid #32353e;
+		}
+		.contactBox{
+			width:514px;
+			height: 200px;
+			margin-top: 36px;
+			margin-left: calc(50% - 257px);
+		}
+		.contactBox h3{
+
 		}
 	</style>
 </head>
@@ -747,27 +864,50 @@
 				<p>那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
 			</div>
 		</div>
-		<div class="loginLeft">
-			<div>
-				<h5></h5>
-				<p></p>
-				<div><img src=""><p></p></div>
+		<div class="loginLeft clearFix">
+			<div class="loginLeftTit">
+				<h5>新世界志愿者协议</h5>
+				<p>加入新世界志愿者的人员必须遵守中华人民共和国的相关法律法规，并且本着平等资源的原则......</p>
+				<div class="loginLeftMore"><a href=""><img src="xwxy7_more.png"><p>more</p></a></div>
 			</div>
-			<div>
-				<h5></h5>
-				<p></p>
-				<div><img src=""><p></p></div>
+			<div class="loginLeftTit">
+				<h5>新世界志愿者权利</h5>
+				<p>新世界志愿者享受新世界内部所有资源共享的权利，并且享受所在四新世界活的优先参与资格</p>
+				<div class="loginLeftMore"><a href=""><img src="xwxy7_more.png"><p>more</p></a></div>
 			</div>
-			<div>
-				<h5></h5>
-				<p></p>
-				<div><img src=""><p></p></div>
+			<div class="loginLeftTit">
+				<h5>更多条款</h5>
+				<div class="loginLeftMore"><a href=""><img src="xwxy7_more.png"><p>more</p></a></div>
 			</div>
 		</div>
-		<div class="loginRight"></div>
+		<div class="loginRight clearFix">
+			<input type="text" name="name" class="loginRightName" value="姓名：">
+			<input type="text" name="age" class="loginRightAge" value="年龄：">
+			<input type="text" name="tell" class="loginRightTell" value="联系方式：">
+			<input type="text" name="add" class="loginRightAdd" value="联系地址：">
+			<textarea class="loginRightDream">请简单描述您梦想的生活：</textarea>
+			<input type="button" name="" class="loginRightBut" value="提交申请">
+		</div>
 	</div>  <!-- login结束 -->
 
-	<div></div>
+	<div class="contact">
+		<div class="contactBox">
+			<h3>联系我们</h3>
+			<p>为了更好的获取我们的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯</p>
+			<p>也可以通过以下任何方式关注我们动态</p>
+			<div>
+			<input type="text" name="">
+			<input type="button" name="">
+			</div>
+			<div>
+				<img src="xwxy7_qq.png">
+				<img src="xwxy7_wb.png">
+				<img src="xwxy7_tw.png">
+				<img src="xwxy7_ls.png">
+			</div>
+		</div>
+	</div>
+
 	<footer></footer>
 </body>
 </html>
