@@ -652,17 +652,79 @@
 		.contact{
 			height: 358px;
 			background-color: #32353e;
-			width: calc(100% - 2px);
-			border: 1px solid #32353e;
+			width: 100%;
 		}
 		.contactBox{
 			width:514px;
-			height: 200px;
-			margin-top: 36px;
+			height: 164px;
+			padding-top: 36px;
 			margin-left: calc(50% - 257px);
 		}
 		.contactBox h3{
-
+			color: #fff;
+			text-align: center;
+			font-size: 19px;
+			margin-top: 12px;
+		}
+		.contactBox p{
+			color: #fff;
+			font-size: 12px;
+			text-align: center;
+		}
+		.contactInp{
+			margin-top: 31px;
+		}
+		.contactInp1{
+			width: 429px;
+			height: 38px;
+			border: 1px solid #989a9e;
+			float: left;
+			line-height: 35px;
+		}
+		.contactBut{
+			width: 80px;
+			height: 42px;
+			float: left;
+			background-color: #6f7178;
+			border:none;
+			outline: none;
+			color: #fff;
+			letter-spacing: 9px;
+		}
+		.contactImg{
+			width: 514px;
+			height: 27px;
+			margin-top: 110px;
+		}
+		.contactImgBox{
+			width: 220px;
+			height: 25px;
+			margin-left: calc(50% - 105px);
+		}
+		.contactImgBox img{
+			margin-left: 25px;
+		}
+		footer{
+			width: 100%;
+			height: 57px;
+			background-color: #2f2f38;
+		}
+		.footerLeft{
+			margin-left: 98px;
+			margin-top: 29px;
+			float: left;
+			color: #fff;
+			font-size: 12px;
+		}
+		.footerRight{
+			margin-right: 98px;
+			margin-top: 29px;
+			float: right;
+			font-size: 12px;
+		}
+		.footerRight a{
+			text-decoration:none;
+			color: #fff;
 		}
 	</style>
 </head>
@@ -891,23 +953,30 @@
 	</div>  <!-- login结束 -->
 
 	<div class="contact">
-		<div class="contactBox">
+		<div class="contactBox clearFix">
+			<div>
 			<h3>联系我们</h3>
 			<p>为了更好的获取我们的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯</p>
 			<p>也可以通过以下任何方式关注我们动态</p>
-			<div>
-			<input type="text" name="">
-			<input type="button" name="">
 			</div>
-			<div>
+			<div class="contactInp">
+			<input type="text" name="" class="contactInp1">
+			<input type="button" name="" class="contactBut" value="提交">
+			</div>
+			<div class="contactImg">
+			<div class="contactImgBox">
 				<img src="xwxy7_qq.png">
 				<img src="xwxy7_wb.png">
 				<img src="xwxy7_tw.png">
 				<img src="xwxy7_ls.png">
 			</div>
+			</div>
 		</div>
-	</div>
+	</div>   <!-- contant结束 -->
 
-	<footer></footer>
+	<footer class="clearFix">
+		<div class="footerLeft">@2016新世界</div>
+		<div class="footerRight"><a href="">back to top</a></div>
+	</footer>
 </body>
 </html>
