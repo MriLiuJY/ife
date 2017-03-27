@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用HTML/CSS实现一个复杂页面</title>
+	<style type="text/css">
+		/*公共样式*/
+		.clearFix:before,
+		.clearFix:after{
+			content: " ";
+			display: table;
+		}
+		.clearFix:after{
+			clear: both;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		nav{
+			width: 100%;
+			height: 56px;
+			background-color: #2189bf;
+		}
+		.navLogo{
+			float: left;
+			margin-top: 10px;
+			margin-left: 50px;
+		}
+		.navLogin{
+			float: right;
+			margin-right: 120px;
+			margin-top: 20px;
+		}
+		.navSearch{
+			float: right;
+			margin-top: 14px;
+			margin-right: 21px;
+			height: 28px;
+			width: 312px;
+		}
+		.navSearch input{
+			height: 28px;
+			width: 312px;
+			border-radius: 20px;
+			outline: none;
+			background-image: url(xwxy9_serch.png);
+			background-repeat: no-repeat;
+			background-position:5% 50%;
+			border: none;
+			font-size: 20px;
+			text-indent: 32px;
+		}
+		.wrap{
+			width: 1280px;
+			height: 1210px;
+			margin: 0 auto;
+			border: 1px solid red;
+		}
+		.sidebar{
+			float: left;
+			width: 260px;
+			height: 100%;
+			background-color: #2a2e3d;
+		}
+		.content{
+			width: 1020px;
+			height: 100%;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+	    <div class="navLogo"><img src="xwxy9.png"></div>
+		<div class="navLogin"><img src="xwxy9_login.png"></div>
+		<div class="navSearch"><input type="text" name=""></div>
+	</nav>
+	<div class="wrap clearFix">
+		<div class="sidebar"></div>
+		<div class="content"></div>
+	</div>
+</body>
+</html>
