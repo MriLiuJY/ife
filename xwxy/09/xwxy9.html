@@ -13,6 +13,10 @@
 		.clearFix:after{
 			clear: both;
 		}
+		p{
+			margin: 0;
+			padding: 0;
+		}
 		body{
 			margin: 0;
 			padding: 0;
@@ -55,7 +59,6 @@
 			width: 1280px;
 			height: 1210px;
 			margin: 0 auto;
-			border: 1px solid red;
 		}
 		.sidebar{
 			float: left;
@@ -68,6 +71,69 @@
 			height: 100%;
 			float: left;
 		}
+		.sidebarHead{
+			height: 150px;
+			width: 100%;
+		}
+		.sidebarHeadCir{
+			width: 53px;
+			height: 53px;
+			border-radius: 50%;
+			border: 1px solid #e7e6e7;
+			margin-top: 18px;
+			margin-left: 45px;
+			float: left;
+		}
+		.sidebarHeadBar{
+			width: 47px;
+			height: 47px;
+			background-color: #bababe;
+			border-radius: 50%;
+			margin-top: 3px;
+			margin-left: 3px;
+		}
+		.sidebarHeadNam{
+			float: left;
+			margin-left: 18px;
+			margin-top: 40px;
+			color: #b2b3b7;
+		}
+		.sidebarFans{
+			width: 110px;
+			height: 30px;
+			margin-top: 99px;
+			margin-left: 62px;
+			position: absolute;
+		}
+		.sidebarFansLef{
+			color:#455061;
+			font-size: 12px;
+			float: left;
+			width: 56px;
+			border-right: 1px solid #313545;
+		}
+		.sidebarFansRig{
+			color:#455061;
+			font-size: 12px;
+			float: right; 
+		}
+		.sidebarList{
+			width: 100%;
+			height: 430px;
+		}
+		.sidebarList ul{
+			margin: 0;
+			padding: 0;
+		}
+		.sidebarList ul li{
+			list-style: none;
+			height: 56px;
+			padding-left: 46px;
+		}
+		.sidebarList ul li a{
+			text-decoration:none;
+			color: #454e60;
+		}
 	</style>
 </head>
 <body>
@@ -77,8 +143,36 @@
 		<div class="navSearch"><input type="text" name=""></div>
 	</nav>
 	<div class="wrap clearFix">
-		<div class="sidebar"></div>
-		<div class="content"></div>
+		<!-- sidebar部分开始 -->
+		<div class="sidebar">
+			<div class="sidebarHead">
+				<div class="sidebarHeadCir">
+					<div class="sidebarHeadBar">
+					</div>
+				</div>
+				<div class="sidebarHeadNam">
+					<p>ABC123</p>
+				</div>
+				<div class="sidebarFans">
+					<div class="sidebarFansLef"><p>110</p><p>收藏</p></div>
+					<div class="sidebarFansRig"><p>313</p><p>粉丝</p></div>
+				</div>
+			</div>
+			<div class="sidebarList">
+				<ul>
+					<li><a href=""><img src="xwxy9_lis1.png">个人报表</a></li>
+					<li><a href=""><img src="xwxy9_lis1.png">个人收藏</a></li>
+					<li><a href=""><img src="xwxy9_lis2.png">我的分享</a></li>
+					<li><a href=""><img src="xwxy9_lis1.png">图库</a></li>
+					<li><a href=""><img src="xwxy9_lis1.png">成长记录</a></li>
+					<li><a href=""><img src="xwxy9_lis3.png">账户信息</a></li>
+				</ul>
+			</div>
+		</div><!-- sidebar结束 -->
+		<!-- content部分开始 -->
+		<div class="content">
+			
+		</div><!-- content部分结束 -->
 	</div>
 </body>
 </html>
